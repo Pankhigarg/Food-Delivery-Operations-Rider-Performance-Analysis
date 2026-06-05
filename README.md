@@ -35,8 +35,8 @@ v2 note: This version corrects several measurement errors from v1 — including 
 | Total Riders Scored | **1,320** |
 | Cities Covered | **9,607** |
 | Festival Impact Rate | **73.86%** of orders impacted |
-| Peak Month Avg Delivery Time | **45.50 min ** (festival season spike) |
-| Festival Delay Premium |+19.33 min (45.50 min vs 26.17 min non-festival)|
+| Peak Month Avg Delivery Time | **45.50 min**  (festival season spike) |
+| Festival Delay Premium |**+19.33 min**| (45.50 min vs 26.17 min non-festival)
 | Avg Pickup Wait | **9.98 min** |
 
 
@@ -374,7 +374,7 @@ jupyter notebook notebooks/v2_improved.ipynb
 3. **Semi-urban zones need network investment, not routing fixes.** 100% delay rate over short distances (avg 13 km) signals a coverage gap — more riders are needed, not smarter routes.
 4. **EV scooters are ~3 minutes faster per delivery** — statistically significant (Mann-Whitney U). Fleet mix optimisation toward EVs is a measurable efficiency lever.
 5. **Customer ratings are a weak performance signal.** Min/km varies by 66% across rider tiers; ratings vary by only 0.09. Ops decisions on coaching and assignment should be driven by efficiency and delay rate, not ratings.
-6. **75% of riders classified as Low Performers in v1 was a scoring bug.** The corrected percentile-based model shows an even distribution across tiers, enabling meaningful and fair segmentation for coaching and retention.
+
 ---
  
 ## Skills Demonstrated
