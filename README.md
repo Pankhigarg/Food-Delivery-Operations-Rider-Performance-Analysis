@@ -196,6 +196,7 @@ composite_score = (
 - **Order Volume by Time of Day** — Night 41.78% · Dinner 30.73% · Lunch 8.15%
 - **Time by Vehicle Type** — IC Engine: 26.61 min avg; EV: 24.52 min
 <img width="1440" height="758" alt="image" src="https://github.com/user-attachments/assets/9c154b44-d6f8-4a60-ad19-3b6992acf218" />
+<img width="670" height="410" alt="image" src="https://github.com/user-attachments/assets/68056d35-1fdd-41f3-9bb0-9f5c1a0d4a84" />
 
 ### Page 2 — Time Trends
 > Monthly delivery time and volume analysis
@@ -204,6 +205,7 @@ composite_score = (
 - Festival delay premium: **+19.33 min** (Festival: 45.50 min vs Non-festival: 26.17 min)
 - **Delivery Time by Road Traffic** — Jam: 21.67 min transit · Low: 11.70 min transit
 - **Time-Traffic Heatmap** — Dinner + Jam peaks at 31.2 min; Breakfast + Low at 19.5 min
+<img width="795" height="462" alt="image" src="https://github.com/user-attachments/assets/a5a11d81-f8ff-4d3d-b7f2-b823961fb0a4" />
 
 ### Page 3 — Rider Leaderboard
 > Composite performance scoring for 1,320 riders
@@ -213,6 +215,7 @@ composite_score = (
 - **Avg Min/Km by Category** — High Performer: 2.8 · Average: 3.1 · Low Performer: 4.6
 - Full leaderboard table with composite score, avg min/km, avg rating, total orders, delay rate, and rank
 
+<img width="810" height="462" alt="image" src="https://github.com/user-attachments/assets/62c7993a-7d14-4687-b1d2-523d01473afe" />
 
 ### Page 4 — Score Methodology
 How each rider's composite score is calculated
@@ -221,7 +224,8 @@ How each rider's composite score is calculated
 - Multi-drop timing adjustment explanation
 - Performance category thresholds and rider counts
 - Average time by external vs internal factors (city tier highest at 49.7 min)
-- 
+<img width="819" height="464" alt="image" src="https://github.com/user-attachments/assets/3135b39d-bf75-4e8c-b30c-61a5006cbdb9" />
+
 ### Page 5 — Weather & Traffic
 > External factor impact on delivery time
 
@@ -238,6 +242,7 @@ How each rider's composite score is calculated
 - Motorcycle deliveries 1.39× more likely to be impacted under high traffic
 - **Time-of-Day × Traffic heatmap** — Dinner + Jam at 31.2 min is the worst operational window
 - Festival + Fog: 45.37 min avg · Festival + Cloudy: 44.93 min · Non-festival + Sunny: 21.88 min
+<img width="806" height="704" alt="image" src="https://github.com/user-attachments/assets/be512094-a384-425b-a0e0-5c8d857a81dd" />
 
 **Recommendations (dashboard-embedded):**
 - Implement traffic-aware dynamic routing during peak congestion windows
@@ -252,6 +257,7 @@ Urban · Metropolitan · Semi-Urban breakdown with map
 - **Delay Rate by Tier** — Semi-Urban: 100% · Urban: 81.19% · Metropolitan: 33.48%
 - Semi-Urban avg time: 49.71 min over just 13 km — coverage gap, not distance
 - Interactive map plotting delay vs on-time delivery locations across India
+<img width="953" height="536" alt="image" src="https://github.com/user-attachments/assets/8147fadc-8300-4ec0-b8c6-723cf611a615" />
 
 ## Rider Scoring Model
 
