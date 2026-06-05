@@ -70,41 +70,15 @@ df['delay_flag'] = np.where(df['Time_taken(min)'] > SLA_THRESHOLD, 'Delay', 'On 
  
 ### Bug 2 — Rider Scoring Was Inverted
  
-v1 normalised efficiency (min/km) but forgot to invert it, meaning slower riders scored higher. v2 explicitly inverts both efficiency and delay rate so that lower raw values produce higher normalised scores:
+In v1 I normalised efficiency (min/km) but forgot to invert it due to which  meaning slower riders scored higher. v2 explicitly inverts both efficiency and delay rate so that lower raw values produce higher normalised scores:
  
 ```python
 rider_agg['eff_norm']   = 1 - scaler.fit_transform(rider_agg[['avg_min_per_km']])  # lower = faster = better
 rider_agg['delay_norm'] = 1 - scaler.fit_transform(rider_agg[['delay_rate']])       # lower = fewer delays = better
 ```
  
-### Bug 3 — GPS Data Quality (New in v2)
  
-v1 skipped GPS validation. v2 removes rows with sentinel coordinates (0.01°) and validates all coordinates against India's bounding box (lat 6.5–37.5°, lon 68–97.5°):
- 
-```python
-df = df[~(df[coord_cols] == 0.01).any(axis=1)]          # remove sentinel rows
-df = validate_india_gps(df)                               # bounding-box filter
-```
- 
-### Bug 4 — Rider Categories Were Arbitrary (Fixed to Percentile-Based)
- 
-v1 used fixed score thresholds (≥0.75 = High, ≥0.5 = Average) that produced an unrealistic distribution: 75.83% Low Performers. v2 uses `pd.qcut` for statistically defensible equal-thirds segmentation:
- 
-```python
-# v1 — arbitrary and broken
-rider_perf['category'] = rider_perf['rider_score'].apply(
-    lambda s: "High Performer" if s >= 0.75 else ("Average" if s >= 0.5 else "Low Performer")
-)
-# v1 result: Low 75.83% | Avg 12.12% | High 12.05%
- 
-# v2 — percentile-based
-rider_agg['category'] = pd.qcut(
-    rider_agg['composite_score'],
-    q=[0, 0.33, 0.67, 1.0],
-    labels=['Low Performer', 'Average', 'High Performer']
-)
-# v2 result: ~33% each — meaningful, comparable segments
-```
+
  
 ### New Feature — Multi-Drop Timing Adjustment
  
