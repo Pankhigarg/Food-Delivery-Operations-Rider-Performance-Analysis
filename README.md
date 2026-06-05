@@ -195,6 +195,7 @@ composite_score = (
 - **Delay by City Tier** — Metropolitan: 21.63K on-time, Urban: 7.78K, Semi-Urban: 1.83K
 - **Order Volume by Time of Day** — Night 41.78% · Dinner 30.73% · Lunch 8.15%
 - **Time by Vehicle Type** — IC Engine: 26.61 min avg; EV: 24.52 min
+<img width="1440" height="758" alt="image" src="https://github.com/user-attachments/assets/9c154b44-d6f8-4a60-ad19-3b6992acf218" />
 
 ### Page 2 — Time Trends
 > Monthly delivery time and volume analysis
