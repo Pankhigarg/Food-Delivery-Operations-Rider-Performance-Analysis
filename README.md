@@ -353,8 +353,8 @@ jupyter notebook notebooks/v2_improved.ipynb
 1. **Delays happen in transit, not at pickup.** Pickup wait time varies by only ~4 seconds across all traffic levels. Once a rider is moving, Jam conditions add 88% more time than Low traffic — dynamic routing during peak hours is the highest-leverage intervention.
 2. **Festivals are the single biggest delay driver.** A 3.42× delay multiplier and 99% festival delay rate means surge staffing must be pre-planned, not reactive.
 3. **Semi-urban zones need network investment, not routing fixes.** 100% delay rate over short distances (avg 13 km) signals a coverage gap — more riders are needed, not smarter routes.
-4. **EV scooters are ~3 minutes faster per delivery** — statistically significant (Mann-Whitney U). Fleet mix optimisation toward EVs is a measurable efficiency lever.
-5. **Customer ratings are a weak performance signal.** Min/km varies by 66% across rider tiers; ratings vary by only 0.09. Ops decisions on coaching and assignment should be driven by efficiency and delay rate, not ratings.
+4. **EV scooters are ~3 minutes faster per delivery**
+5. **Customer ratings are a weak performance signal.** Min/km varies by 66% across rider tiers; ratings vary by only 0.09. Ops decisions on optimization and assignment should be driven by efficiency and delay rate, not ratings.
 
 ---
  
